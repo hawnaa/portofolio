@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Hana, Informatics student and data engineering enthusiast.">
+  <title>Hana | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="logo">Hana</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#organizations">Organizations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <img src="images/hana.jpg" alt="Hana" class="avatar">
+      <h1>Hana Y. Gurning </h1>
+      <p class="subtitle">Data Engineering Enthusiast | Building Scalable Data Pipelines | Undergraduate Informatics Engineering Student at Gunadarma University</p>
+      <a href="#projects" class="btn">Explore My Work</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <p class="lead">Informatics student at Universitas Gunadarma (class of 2024), based in Depok, West Java. I enjoy building web applications and turning raw data into something useful.</p>
+
+      <h3 class="sub-title">&lt;&gt; Technical Skills</h3>
+      <ul class="skill-list">
+        <li><span class="icon">🖥️</span> Frontend Development (HTML, CSS, Tailwind CSS)</li>
+        <li><span class="icon">⌨️</span> Backend Development (Go)</li>
+        <li><span class="icon">🗄️</span> Database Management (MySQL)</li>
+        <li><span class="icon">🐍</span> Data Engineering (Python, ETL Pipelines, Data Warehousing)</li>
+      </ul>
+
+      <h3 class="sub-title">♡ Philosophy</h3>
+      <ul class="philosophy">
+        <li>Data is the new oil, but uncleaned data is just a messy oil spill</li>
+        <li>Everything you lose is a step you take</li>
+        <li>This is just a storm inside a tea cup, every failure brings you freedom</li>
+      </ul>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <article class="card">
+        <div class="icon-circle">📖</div>
+        <div class="card-body">
+          <h3>Universitas Gunadarma</h3>
+          <p class="degree">S1 Informatics</p>
+          <p class="meta"><span class="pill">📅 2024 – Present</span></p>
+          <p>Focused on web development and data analysis.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- WORK EXPERIENCE -->
+    <section id="experience">
+      <h2 class="section-title">Work Experience</h2>
+
+      <article class="card">
+        <div class="icon-circle">💼</div>
+        <div class="card-body">
+          <h3>Gunadarma IP Center (Sentra KI)</h3>
+          <p class="role">Data Engineer, Assistant 2025</p>
+          <p class="meta"><span class="pill">📅 Dec 2025 – Present</span></p>
+          <p>Building ETL pipelines and a data warehouse for an analytics database and dashboard covering patents, industrial designs, and copyrights.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="icon-circle">💼</div>
+        <div class="card-body">
+          <h3>SDN 173645 Lumban Huala</h3>
+          <p class="role">Personal Teaching Assistant</p>
+          <p class="meta"><span class="pill">📅 Jun 2023 – May 2024</span></p>
+        </div>
+      </article>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <article class="card project">
+        <span class="status-dot" title="In progress"></span>
+        <div class="card-body">
+          <div class="icon-circle">🗂️</div>
+          <h3>onBudget</h3>
+          <p>A personal finance web app to record expenses, set budgets per category, and get alerts when the budget runs low or is exceeded.</p>
+          <ul class="tags">
+            <li>Laravel</li>
+            <li>MySQL</li>
+            <li>Tailwind CSS</li>
+          </ul>
+          <p class="meta">📅 2026</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ORGANIZATIONS WORKS EXPERIENCE -->
+    <section id="organizations">
+      <h2 class="section-title">Organizations Work Experience</h2>
+
+      <article class="card">
+        <div class="icon-circle">👥</div>
+        <div class="card-body">
+          <h3>Sportfest 2026</h3>
+          <p class="role">Rundown Division Staff, Event Committee</p>
+          <p class="meta"><span class="pill">📅 Jun 2026 – Jul 2026</span></p>
+          <!-- tambah deskripsi kalau mau: <p>...</p> -->
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="icon-circle">👥</div>
+        <div class="card-body">
+          <h3>Gunadarma Olympiad 2025</h3>
+          <p class="role">Registration Division Staff, Event Committee</p>
+          <p class="meta"><span class="pill">📅 Jul 2025 – Aug 2025</span></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="icon-circle">👥</div>
+        <div class="card-body">
+          <h3>PPKMB FTI UG 2026</h3>
+          <p class="role">Penanggung Jawab Kelompok</p>
+          <p class="meta"><span class="pill">📅 September 2026</span></p>
+        </div>
+      </article>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="card contact-card">
+        <div class="card-body">
+          <h3>Let's Connect</h3>
+          <p class="lead">I'm open to internship and work opportunities. Feel free to reach out!</p>
+
+          <ul class="contact-list">
+            <li><span class="icon-circle small">✉️</span> <a href="mailto:hanayosephinee@gmail.com">hanayosephinee@gmail.com</a></li>
+            <li><span class="icon-circle small">📞</span> +62 821-6822-7651</li>
+            <li><span class="icon-circle small">📍</span> Depok, West Java, Indonesia</li>
+            
+          </ul>
+
+          <h3 class="sub-title">Social Links</h3>
+          <div class="social">
+            <a href="https://github.com/hawnaa" target="_blank" rel="noopener" class="social-card">
+              <strong>GitHub</strong><span>hawnaa</span>
+            </a>
+            <a href="https://www.linkedin.com/in/hana-y-gurning-588b0432b" target="_blank" rel="noopener" class="social-card">
+              <strong>LinkedIn</strong><span>hana-y-gurning</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Hana. All rights reserved.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
