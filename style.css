@@ -285,3 +285,17 @@ footer {
     scroll-behavior: auto !important;
   }
 }
+
+/* HERO BUTTONS */
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn-outline:hover { background: #fff; color: #0a0a0a; opacity: 1; }
