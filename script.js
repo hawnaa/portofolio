@@ -38,7 +38,7 @@ if (!reduceMotion && 'IntersectionObserver' in window) {
   document.documentElement.classList.add('js');
 
   const targets = document.querySelectorAll(
-    '.section-title, main section .lead, .sub-title, .skill-list li, .philosophy li, .card, .social-card'
+'.section-title, main section .lead, .sub-title, .skill-list li, .philosophy li, .card, .social-card, .table-wrap'
   );
 
   // jeda bertahap untuk elemen yang bersaudara (maks 5 langkah)
@@ -63,4 +63,6 @@ if (!reduceMotion && 'IntersectionObserver' in window) {
   }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
 
   targets.forEach(el => observer.observe(el));
+
+  
 }
