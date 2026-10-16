@@ -299,3 +299,45 @@ footer {
   border: 1px solid #fff;
 }
 .btn-outline:hover { background: #fff; color: #0a0a0a; opacity: 1; }
+
+/* CERTIFICATES TABLE */
+.table-wrap {
+  overflow-x: auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+.cert-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+}
+.cert-table th,
+.cert-table td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border);
+}
+.cert-table thead th {
+  background: #161616;
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.cert-table tbody tr { transition: background 0.2s; }
+.cert-table tbody tr:hover { background: #161616; }
+.cert-table tfoot td {
+  color: var(--muted);
+  font-style: italic;
+  border-bottom: none;
+}
+.proof-link { color: var(--blue); }
+.proof-link:hover { text-decoration: underline; }
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
