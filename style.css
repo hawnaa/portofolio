@@ -341,3 +341,36 @@ footer {
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+/* FORM */
+.form-card .card-body { width: 100%; }
+.contact-form { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem; }
+.contact-form label { font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem; }
+.contact-form label.inline { display: flex; align-items: center; gap: 0.5rem; color: var(--text); margin-top: 0.25rem; }
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  background: var(--pill);
+  color: var(--text);
+  border: 1px solid #333;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus { outline: none; border-color: var(--blue); }
+.contact-form textarea { resize: vertical; }
+.contact-form fieldset { border: 1px solid #333; border-radius: 10px; padding: 0.6rem 0.9rem; margin-top: 0.75rem; }
+.contact-form legend { padding: 0 0.4rem; color: var(--muted); font-size: 0.9rem; }
+.form-buttons { display: flex; gap: 1rem; margin-top: 1rem; }
+.form-buttons .btn { border: none; cursor: pointer; font-family: inherit; font-size: 1rem; }
+.form-buttons .btn-outline { border: 1px solid #fff; }
+
+/* VIDEO FRAME */
+.video-card .card-body { width: 100%; }
+.video-wrap { margin-top: 1rem; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); }
+.video-wrap iframe { display: block; width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0; }

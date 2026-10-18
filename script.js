@@ -38,8 +38,7 @@ if (!reduceMotion && 'IntersectionObserver' in window) {
   document.documentElement.classList.add('js');
 
   const targets = document.querySelectorAll(
-'.section-title, main section .lead, .sub-title, .skill-list li, .philosophy li, .card, .social-card, .table-wrap'
-  );
+'.section-title, main section .lead, .sub-title, .skill-list li, .philosophy li, .card, .social-card, .table-wrap'  );
 
   // jeda bertahap untuk elemen yang bersaudara (maks 5 langkah)
   const groups = new Map();
