@@ -65,3 +65,23 @@ if (!reduceMotion && 'IntersectionObserver' in window) {
 
   
 }
+
+/* ---------- Tema terang / gelap ---------- */
+const themeToggle = document.getElementById('themeToggle');
+const root = document.documentElement;
+
+function applyTheme(theme) {
+  root.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+  const isDark = theme === 'dark';
+  themeToggle.textContent = isDark ? '☀️' : '🌙';
+  themeToggle.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+}
+
+applyTheme(root.getAttribute('data-theme') || 'dark');
+
+themeToggle.addEventListener('click', () => {
+  root.classList.add('theme-transition');
+  applyTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  setTimeout(() => root.classList.remove('theme-transition'), 400);
+});

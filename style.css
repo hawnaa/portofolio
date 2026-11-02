@@ -374,3 +374,73 @@ footer {
 .video-card .card-body { width: 100%; }
 .video-wrap { margin-top: 1rem; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); }
 .video-wrap iframe { display: block; width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0; }
+
+
+
+/* ---------- THEME TOGGLE BUTTON ---------- */
+.nav-right { display: flex; align-items: center; gap: 0.75rem; }
+.theme-toggle {
+  width: 38px; height: 38px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.theme-toggle:hover { transform: rotate(15deg); border-color: var(--muted); }
+
+/* Transisi halus saat ganti tema (kelasnya dipasang sebentar oleh script.js) */
+.theme-transition,
+.theme-transition * {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s !important;
+}
+
+/* ---------- LIGHT THEME ---------- */
+:root { color-scheme: dark; }
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f7f7f5;
+  --card: #ffffff;
+  --border: #e3e3e3;
+  --circle: #ececec;
+  --pill: #f1f1f1;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --blue: #2563eb;
+}
+
+/* Bagian yang warnanya tertulis langsung di CSS lama */
+[data-theme="light"] .navbar { background: rgba(255, 255, 255, 0.85); }
+[data-theme="light"] .navbar.scrolled { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); }
+[data-theme="light"] .navbar nav a:hover,
+[data-theme="light"] .navbar nav a.active { color: #000; }
+
+[data-theme="light"] .btn { background: #111; color: #fff; }
+[data-theme="light"] .btn-outline { background: transparent; color: #111; border-color: #111; }
+[data-theme="light"] .btn-outline:hover { background: #111; color: #fff; }
+[data-theme="light"] .form-buttons .btn-outline { border-color: #111; }
+
+[data-theme="light"] .card:hover { border-color: #bdbdbd; }
+[data-theme="light"] .tags li { border-color: #ddd; }
+[data-theme="light"] .contact-card { background: linear-gradient(135deg, #ffffff, #f1f2f7); }
+[data-theme="light"] .social-card { background: #f5f5f7; }
+[data-theme="light"] .social-card:hover { border-color: #bdbdbd; }
+
+[data-theme="light"] .to-top { background: #fff; color: #111; }
+
+[data-theme="light"] .cert-table thead th { background: #f3f3f3; }
+[data-theme="light"] .cert-table tbody tr:hover { background: #f7f7f7; }
+
+[data-theme="light"] .contact-form input[type="text"],
+[data-theme="light"] .contact-form input[type="email"],
+[data-theme="light"] .contact-form select,
+[data-theme="light"] .contact-form textarea,
+[data-theme="light"] .contact-form fieldset { border-color: #d4d4d4; }
+
+@media (max-width: 720px) {
+  [data-theme="light"] .navbar nav { background: #fff; }
+}
