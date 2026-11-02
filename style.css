@@ -444,3 +444,8 @@ footer {
 @media (max-width: 720px) {
   [data-theme="light"] .navbar nav { background: #fff; }
 }
+
+/* VIDEO FRAME */
+.video-card .card-body { width: 100%; }
+.video-wrap { margin-top: 1rem; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); }
+.video-wrap iframe { display: block; width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0; }
